@@ -5,6 +5,7 @@ import MiniLandingPage from "../pages/MiniLandingPage"
 import ForgotPassword from "../pages/ForgotPassword"
 import Register from "../pages/Register"
 
+
 export const Index = createBrowserRouter([
     {
         path: "/",
@@ -27,5 +28,6 @@ export const Index = createBrowserRouter([
                 element: <ForgotPassword />
             }
         ]
-    }
+    },
+        
 ])
