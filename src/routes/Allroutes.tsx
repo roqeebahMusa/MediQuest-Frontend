@@ -7,6 +7,7 @@ import Register from "../pages/Register"
 import VerifyPassword from "../pages/VerifyPassword"
 import CreateNewPassword from "../pages/CreateNewPassword"
 
+
 export const Index = createBrowserRouter([
     {
         path: "/",
@@ -37,5 +38,6 @@ export const Index = createBrowserRouter([
                 element: <CreateNewPassword />
             }
         ]
-    }
+    },
+        
 ])
