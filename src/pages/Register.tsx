@@ -39,16 +39,6 @@ const Register:React.FC = () => {
                 
         </div>
         <div className='bg-[#0D3859] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'>
-        {/* <button className='bg-white px-5 py-3 rounded-e-3xl flex '>
-        <Link 
-                    to={`/login`}
-                    style={{
-                        textDecoration:"none",
-                        color: "black",
-                        transition: "ease-in 150ms"
-                    }} ><span className='ml-2'>Login</span>
-                 </Link>
-        </button> */}
         </div>
        </div>
     </div>
