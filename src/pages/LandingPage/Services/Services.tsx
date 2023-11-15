@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import service from "../../assets/MediQuestLAB/services.jpg"
+import service from "../../../assets/MediQuestLAB/services.jpg"
 
 const Services = () => {
   return (
@@ -251,7 +251,7 @@ line-height: normal;
 }
 
 @media screen and (max-width: 430px) {
-    font-size: 22px;
+    font-size: 20px;
     width: 100%;
 }
 
@@ -264,12 +264,15 @@ const P3 = styled.div`
     color: #F5F5F5;
 font-size: 20px;
 font-style: normal;
-/* font-weight: 500; */
 line-height: normal;
 
 
 @media screen and (max-width: 768px) {
     font-size: 14px;
+}
+
+@media screen and (max-width: 330px) {
+    font-size: 13px;
 }
 `
 
@@ -286,6 +289,6 @@ line-height: normal;
 }
 
 @media screen and (max-width: 380px) {
-    font-size: 15px;
+    font-size: 13px;
 }
 `

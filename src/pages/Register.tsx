@@ -1,9 +1,10 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+// import signup from "../assets/MediQuestLAB/MediQuest Lab_ui.jpg"
 
 const Register:React.FC = () => {
   return (
-    <div className='bg-slate-300 h-screen w-screen flex justify-center items-center sm:bg-white md:bg-white'>
+    <div className='bg-red-300 h-screen w-screen flex justify-center items-center sm:bg-white md:bg-white'>
        <div className="bg-slate-50 flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
         <div className='flex flex-col gap-4 mx-10 mt-10 sm:mt-0 md:mt-0 sm:w-screen sm:mx-0 md:w-screen md:mx-0'>
             <h1 className=' text-center text-[50px] text-[#177eb1] font-extrabold  sm:text-[45px]'>MediQuest</h1>
@@ -29,7 +30,7 @@ const Register:React.FC = () => {
             <div className="">
              <p className=' text-black text-center'>Already have an account? 
                  <Link 
-                    to={`/login`}
+                    to={'/login'}
                     style={{
                         textDecoration:"none",
                         color: "#177eb1",
@@ -38,17 +39,8 @@ const Register:React.FC = () => {
             </div>
                 
         </div>
-        <div className='bg-[#0D3859] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'>
-        {/* <button className='bg-white px-5 py-3 rounded-e-3xl flex '>
-        <Link 
-                    to={`/login`}
-                    style={{
-                        textDecoration:"none",
-                        color: "black",
-                        transition: "ease-in 150ms"
-                    }} ><span className='ml-2'>Login</span>
-                 </Link>
-        </button> */}
+        <div className='bg-[#0D3859] h-[450px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden flex justify-center items-center object-cover'>
+            {/* <img className='w-[60%] absolute left-[420px] top-[85px]' src={signup} alt="" /> */}
         </div>
        </div>
     </div>

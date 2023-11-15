@@ -1,8 +1,8 @@
 import styled from "@emotion/styled"
-import facebk from "../../assets/MediQuestLAB/fbk.jpg"
-import tweet from "../../assets/MediQuestLAB/tweet.jpg"
-import insta from "../../assets/MediQuestLAB/insta.jpg"
-import link from "../../assets/MediQuestLAB/link.jpg"
+import facebk from "../../../assets/MediQuestLAB/fbk.jpg"
+import tweet from "../../../assets/MediQuestLAB/tweet.jpg"
+import insta from "../../../assets/MediQuestLAB/insta.jpg"
+import link from "../../../assets/MediQuestLAB/link.jpg"
 
 
 

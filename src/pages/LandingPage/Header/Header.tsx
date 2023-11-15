@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import Medi from "../../assets/MediQuestLAB/MediQuestLab.jpg"
+import Medi from "../../../assets/MediQuestLAB/MediQuestLab.jpg"
 import { Link } from "react-router-dom"
 import {BiMenu} from "react-icons/bi"
 import {FaTimes} from "react-icons/fa"
@@ -23,39 +23,31 @@ const Header = () => {
 
       <Navigations>
        
-       <Link 
-            style={{
-            textDecoration: "none",
-            color: "#0D3859"
-       }}
+       <Link className="p"
            to={'/'}>Home</Link>
 
-        <Link
-             style={{
-              textDecoration: "none",
-              color: "#0D3859"
-         }}
+        <Link className="p"
             to={'/about'}>About</Link>
 
-        <Link 
-             style={{
-              textDecoration: "none",
-              color: "#0D3859"
-         }}
+        <Link className="p"
+           
             to={'/'}>Services</Link>
 
-        <Link 
-             style={{
-              textDecoration: "none",
-              color: "#0D3859"
-         }}
+        <Link className="p"
+            
             to={'/'}>Contact us</Link>
 
       </Navigations>
 
       <Forms>
+        <Link to={'/register'}>
         <button>Register</button>
+        </Link>
+
+        <Link to={'/login'}>
         <button>Log in</button>
+        </Link>
+
       </Forms>
 
       <Tog>
@@ -84,6 +76,12 @@ const Container = styled.div`
   justify-content: space-around;
   align-items: center; 
 
+
+  @media screen and (max-width: 768px) {
+       width: 100%;
+       display: flex;
+       justify-content: space-evenly;
+      }
 
   @media screen and (max-width: 430px) {
         display: flex;
@@ -158,13 +156,12 @@ const Navigations = styled.div`
 
 
 
-  p {
+  .p {
     color: #0D3859;
-// font-family: Inter;
-font-size: 16px;
+font-size: 15px;
 font-style: normal;
 line-height: normal;
-  }
+}
 `
 
 const Forms = styled.div`
@@ -212,5 +209,6 @@ const Tog = styled.div`
     justify-content: center;
     align-items: center;
     width: 20%;
+    
   }
 `

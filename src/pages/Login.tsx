@@ -1,11 +1,13 @@
-import React from 'react'
 import {Link} from "react-router-dom"
+import login from "../assets/MediQuestLAB/verify.jpg"
 
 const Login:React.FC = () => {
   return (
     <div className='bg-slate-300 h-[100vh] w-screen flex justify-center items-center sm:bg-white md:bg-white' >
        <div className="bg-slate-50 flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
-       <div className='bg-[#0D3859] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'></div>
+       <div className='bg-[#0D3859] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'>
+       <img src={login} alt="" />
+       </div>
         <div className='flex flex-col gap-4 mx-10 mt-10 sm:mt-0 md:mt-0 sm:w-screen sm:mx-0 md:w-screen md:mx-0'>
             <h1 className='text-[#177eb1] text-center text-[50px] font-extrabold  sm:text-[45px]  '>MediQuest</h1>
             <h2 className='text-black text-center text-[35px] sm:text-[20px] md:text-[20px] '>Login to your account</h2>

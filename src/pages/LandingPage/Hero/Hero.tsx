@@ -1,6 +1,6 @@
 // import React from 'react'
 import styled from "@emotion/styled"
-import ggg from "../../assets/MediQuestLAB/pers.jpg"
+import ggg from "../../../assets/MediQuestLAB/pers.jpg"
 
 const Hero = () => {
   return (
@@ -52,7 +52,7 @@ const Container = styled.div`
 const Image = styled.img`
   width: 100%;
   height: 100%;
-  filter: brightness(20%);
+  filter: brightness(40%);
 
 
   @media screen and (max-width: 430px) {
@@ -82,10 +82,10 @@ const MediHead = styled.div`
     @media screen and (max-width: 768px) {
         width: 80%;
         height: 80%;
-        /* background-color: gray; */
 
+        
         h4 {
-          width: 64%;
+          width: 61%;
         }
       }
 
@@ -99,8 +99,8 @@ const MediHead = styled.div`
 
 
         h4 {
-          width: 95%;
-          /* opacity: 20%; */
+          width: 89%;
+          margin-right: 10px;
         }
       }
 
@@ -111,6 +111,13 @@ const MediHead = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h4 {
+          width: 95%;
+          margin-left: 20px;
+          font-size: 15px;
+        }
+
       }
 
       @media screen and (max-width: 330px) {
@@ -120,6 +127,12 @@ const MediHead = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        h4 {
+          width: 90%;
+          font-size: 13px;
+        }
+
       }
 
 `
@@ -134,26 +147,25 @@ padding-left: 24px;
 
 @media screen and (max-width: 768px) {
         width: 100%;
-        font-size: 80px;
-        /* background-color: brown; */
+        font-size: 75px;
       }
 
 
       @media screen and (max-width: 430px) {
         width: 100%;
-        font-size: 65px;
+        font-size: 63px;
 
       }
 
       @media screen and (max-width: 380px) {
         width: 100%;
-        font-size: 67px;
+        font-size: 60px;
         
       }
 
       @media screen and (max-width: 330px) {
          width: 100%;
-          font-size: 45px;
+          font-size: 48px;
       }
 
 
@@ -174,20 +186,22 @@ span {
 
 @media screen and (max-width: 768px) {
         width: 100%;
-        font-size: 25px;
+        font-size: 20px;
+        margin-top: 10px;
       }
 
 
       @media screen and (max-width: 430px) {
         width: 100%;
-        font-size: 17px;
-
+        font-size: 16px;
+        margin-top: 10px;
 
       }
 
       @media screen and (max-width: 380px) {
         width: 100%;
-        font-size: 16px;
+        font-size: 15px;
+        margin-top: 10px;
 
       }
 
@@ -195,6 +209,8 @@ span {
          font-weight: 300;
          width: max-content;
          width: 100%;
+         font-size: 15px;
+         margin-top: 10px;
 
       }
 `
@@ -211,7 +227,8 @@ padding-top: 30px;
 
 @media screen and (max-width: 768px) {
         width: 100%;
-        font-size: 25px;
+        font-size: 20px;
+        font-weight: 600;
       }
 
 
@@ -260,6 +277,7 @@ option {
 @media screen and (max-width: 768px) {
          height: 11%;
          font-size: 15px;
+         padding-left: 10px;
       }
 
 
@@ -267,18 +285,17 @@ option {
         width: 90%;
         font-size: 13px;
         padding-left: 8px;
-        height: 10%;
-        margin-right: 11%;
+        height: 12%;
+        margin-right: 5%;
 
       }
 
       @media screen and (max-width: 380px) {
-        width: 95%;
-        height: 9%;
-        margin-left: 20px;
+        width: 90%;
+        height: 10%;
       }
 
       @media screen and (max-width: 330px) {
-        height: 7%;
-      }
+        height: 9%;
+}
 `
