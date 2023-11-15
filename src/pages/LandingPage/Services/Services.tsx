@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import service from "../../assets/MediQuestLAB/services.jpg"
+import service from "../../../assets/MediQuestLAB/services.jpg"
 
 const Services = () => {
   return (

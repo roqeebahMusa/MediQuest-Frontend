@@ -1,37 +1,31 @@
-// import React from 'react'
+import React from 'react'
 import styled from "@emotion/styled"
-import ggg from "../../assets/MediQuestLAB/pers.jpg"
+import ggg from "../../../assets/MediQuestLAB/pers.jpg"
 
-const Hero = () => {
+const Hero:React.FC = () => {
   return (
     <Container>
       <Image src={ggg}></Image>
       <MediHead>
         <P>MediQuest</P>
-
-       
           <h4>Advanced Healthcare Made Personal for you!</h4>
-          <P2> 
-          The laboratory appointment booking app aims 
+          <P2> The laboratory appointment booking app aims 
           to streamline the process of booking medical 
-          laboratory tests and services for customers.
-        </P2>
+          laboratory tests and services for customers.</P2>
 
         <P3>Search for the Test you want to take to see lab
           that is close to you to take the test</P3>
-
           <Select>
               <option disabled>Select</option>
               <option>Festac</option>
-              <option>Festac</option>
-              <option>Festac</option>
-              <option>Festac</option>
+              <option>Agboju</option>
+              <option>Mile 2</option>
+              <option>Badagry</option>
           </Select>
       </MediHead>
     </Container>
   )
 }
-
 export default Hero
 
 

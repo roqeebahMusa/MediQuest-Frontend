@@ -1,10 +1,10 @@
 import styled from "@emotion/styled"
 import ChooseLists from "./ChooseLists"
-import success from "../../assets/MediQuestLAB/Success (1).png"
-import time from "../../assets/MediQuestLAB/Save time.png"
+import success from "../../../assets/MediQuestLAB/Success (1).png"
+import time from "../../../assets/MediQuestLAB/Save time.png"
 import ChooseListsTwo from "./ChooseListsTwo"
-import hands from "../../assets/MediQuestLAB/Handshake.png"
-import info from "../../assets/MediQuestLAB/Information.png"
+import hands from "../../../assets/MediQuestLAB/Handshake.png"
+import info from "../../../assets/MediQuestLAB/Information.png"
 
 
 const Choose = () => {

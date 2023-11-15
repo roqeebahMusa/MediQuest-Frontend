@@ -1,5 +1,5 @@
 import styled from "@emotion/styled"
-import Medi from "../../assets/MediQuestLAB/MediQuestLab.jpg"
+import Medi from "../../../assets/MediQuestLAB/MediQuestLab.jpg"
 import { Link } from "react-router-dom"
 import {BiMenu} from "react-icons/bi"
 import {FaTimes} from "react-icons/fa"
@@ -54,8 +54,20 @@ const Header = () => {
       </Navigations>
 
       <Forms>
-        <button>Register</button>
-        <button>Log in</button>
+      <Link 
+             style={{
+              textDecoration: "none",
+              color: "#0D3859"
+         }}
+            to={'/register'}><button>Register</button></Link>
+            <button><Link 
+             style={{
+              textDecoration: "none",
+              color: "#0D3859"
+         }}
+            to={'/login'}>Log in</Link></button>
+        
+        
       </Forms>
 
       <Tog>

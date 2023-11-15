@@ -1,17 +1,9 @@
-// import React from 'react'
 
-// const CreateNewPassword = () => {
-//   return (
-//     <div>CreateNewPassword</div>
-//   )
-// }
-
-// export default CreateNewPassword
 
 import React from 'react'
 import pix from "../assets/react.svg"
 
-const CreateNewPassword = () => {
+const CreateNewPassword:React.FC = () => {
   return (
     <div className='bg-slate-300 h-screen w-screen pt-8'> 
       <div className="">

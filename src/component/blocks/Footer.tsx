@@ -1,8 +1,65 @@
 import React from 'react'
+import { FaFacebook, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 
-const Footer = () => {
+const Footer:React.FC = () => {
   return (
-    <div>Footer</div>
+    <div className='text-black px-[90px] pt-10'>
+      <div className="flex justify-between items-center border-b-2 pb-5">
+        <div className=''>
+          <h1 className=' w-[50%] text-[70px] text-[#0D3859] font-extrabold'>MediQuest</h1>
+          <div className='flex gap-5 text-[20px] text-[#0D3859]'>
+            <FaFacebook/>
+            <FaXTwitter/>
+            <FaLinkedin/>
+            <FaInstagram/>
+            <FaYoutube/>
+          </div>
+        </div>
+        <div className="w-[50%]">
+          <ul className='flex  gap-24'>
+            <div className="">
+              <li className='text-sm font-semibold text-[#0D3859] cursor-pointer uppercase'>Company</li>
+                <div className='text-[14px] mt-6 space-y-4'>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Home</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Book Now</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Services</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>About us</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>More</li>
+              </div>
+            </div>
+            <div className="">
+              <li className='text-sm font-semibold text-[#0D3859] uppercase cursor-pointer'>Contact Us</li>
+                <div className='text-[14px] mt-6 space-y-4'>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>090 12345678</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>info@mediquest.com</li>
+                </div>
+            </div>
+
+            <div className="">
+              <li className='text-sm font-semibold text-[#0D3859] uppercase cursor-pointer'>Help</li>
+                <div className='text-[14px] mt-6 space-y-4'>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Customer Support</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Terms & Conditions</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Privacy Policy</li>
+                  <li className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Blog</li>
+                </div>
+            </div>
+           
+          </ul>
+        </div>
+      </div>
+      <div className='flex items-center justify-between pt-5'>
+        <div className="">
+          <p className='text-[12px]'>© 2023 MediQuest. All rights reserved</p>
+        </div>
+        <div className="flex items-center justify-between text-[12px] gap-4">
+          <p className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Privacy Policy</p>
+          <p className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Terms of Service</p>
+          <p className='hover:text-[#177eb1] focus:text-[#177eb1] cursor-pointer'>Cookie Settings</p>
+        </div>
+      </div>
+    </div>
   )
 }
 

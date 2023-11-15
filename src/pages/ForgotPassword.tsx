@@ -1,7 +1,7 @@
 import React from 'react'
 import pix from "../assets/react.svg"
 
-const ForgotPassword = () => {
+const ForgotPassword:React.FC = () => {
   return (
     <div className='bg-slate-300 h-screen w-screen pt-8'> 
       <div className="">

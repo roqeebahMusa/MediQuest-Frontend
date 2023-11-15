@@ -1,8 +1,8 @@
 import styled from "@emotion/styled"
-import contact from "../../assets/MediQuestLAB/contact.jpg"
-import loc from "../../assets/MediQuestLAB/loca.jpg"
-import fone from "../../assets/MediQuestLAB/fone.jpg"
-import mail from "../../assets/MediQuestLAB/mail.jpg"
+import contact from "../../../assets/MediQuestLAB/contact.jpg"
+import loc from "../../../assets/MediQuestLAB/loca.jpg"
+import fone from "../../../assets/MediQuestLAB/fone.jpg"
+import mail from "../../../assets/MediQuestLAB/mail.jpg"
 
 const Contacts = () => {
   return (

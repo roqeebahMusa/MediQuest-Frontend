@@ -1,17 +1,7 @@
-// import React from 'react'
-
-// const VerifyPassword = () => {
-//   return (
-//     <div>Verif</div>
-//   )
-// }
-
-// export default VerifyPassword
-
 import React from 'react'
 import pix from "../assets/react.svg"
 
-const VerifyPassword = () => {
+const VerifyPassword:React.FC = () => {
   return (
     <div className='bg-slate-300 h-screen w-screen pt-8'> 
       <div className="">
