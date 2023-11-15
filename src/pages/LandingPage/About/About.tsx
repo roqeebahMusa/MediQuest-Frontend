@@ -5,7 +5,9 @@ import about from "../../../assets/MediQuestLAB/about.jpg"
 const About = () => {
   return (
     <Container>
+      
        <ContainerTwo>
+        
          <AboutPic src={about}></AboutPic>
         <AboutUs>
             <P>ABOUT US</P>
@@ -190,6 +192,7 @@ const P2 = styled.div`
     line-height: normal;
     width: 80%;
     height: 36px;
+    margin-bottom: 20px;
 
     @media screen and (max-width: 768px) {
         width: 80%; 
@@ -220,8 +223,9 @@ const P2 = styled.div`
 `
 
 const P3 = styled.div`
-    width: 80%;
+    width:80%;
     height: 200px;
+    color: black;
 
     @media screen and (max-width: 768px) {
         height: 48%;

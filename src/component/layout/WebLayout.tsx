@@ -8,7 +8,7 @@ import Services from "../../pages/LandingPage/Services/Services"
 import Contacts from "../../pages/LandingPage/Contact/Contacts"
 import Footer from "../../pages/LandingPage/Footer/Footer"
 
-const WebLayout = () => {
+const WebLayout:React.FC = () => {
   return (
     <div>
       <Header />

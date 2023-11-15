@@ -4,10 +4,6 @@ import tweet from "../../../assets/MediQuestLAB/tweet.jpg"
 import insta from "../../../assets/MediQuestLAB/insta.jpg"
 import link from "../../../assets/MediQuestLAB/link.jpg"
 
-
-
-
-
 const Footer = () => {
   return (
     <Container>
@@ -29,11 +25,12 @@ const Footer = () => {
       <DivTwo>
 
         <span>
-          <p>SERVICES <br /></p>
+          <p>Support <br /></p>
 
-            Games <br />
-            Publishing <br />
-            Solutions <br />
+            Help Center <br />
+            Resource Center <br />
+            Privacy Policy <br />
+            security <br />
         </span>
       </DivTwo>
 
@@ -49,7 +46,7 @@ const Footer = () => {
       </DivThree>
 
       <DivFour>
-        <p>FOLLOW</p>
+        <p>Follow</p>
         <Socials>
           <div>
             <img src={facebk} />

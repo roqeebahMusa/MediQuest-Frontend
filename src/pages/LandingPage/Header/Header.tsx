@@ -48,6 +48,21 @@ const Header = () => {
         <button>Log in</button>
         </Link>
 
+      <Link 
+             style={{
+              textDecoration: "none",
+              color: "#0D3859"
+         }}
+            to={'/register'}><button>Register</button>
+            </Link>
+            <button>
+              <Link to={'/login'}
+             style={{
+              textDecoration: "none",
+              color: "#0D3859"}}>Log in</Link>
+
+            </button>
+
       </Forms>
 
       <Tog>
