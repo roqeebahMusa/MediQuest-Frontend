@@ -10,7 +10,9 @@ import RegisterConfirm from "../pages/RegisterConfirm"
 // import MiniLandingPage from "../pages/MiniLandingPage"
 import LandingWebLayout from "../component/layout/LandingWebLayout"
 import MediQuestLandingPage from "../pages/landing/MediQuestLandingPage"
-import DashBoard from "../component/DashBoard/HomeDashBoard"
+// import DashBoard from "../component/DashBoard/HomeDashBoard"
+import DashboardLayout from "../component/layout/DashboardLayout"
+import AdminDashBoard from "../pages/AdminDashBoard"
 
 
 export const Index = createBrowserRouter([
@@ -75,35 +77,36 @@ export const Index = createBrowserRouter([
         path: "/login",
         element: <Login />
     },
-
     {
         path: "/register",
         element: <Register />
     },
-
     {
         path: "/registerconfirm",
         element: <RegisterConfirm/>
     },
-
     {
         path: "/forgotpassword",
         element: <ForgotPassword />
     },
-
     {
         path: "/verifypassword",
         element: <VerifyPassword />
     },
-
     {
         path: "/createpassword",
         element: <CreateNewPassword />
     },
-
      {
-        path: "/dashboard",
-        element: <DashBoard />
-    },
+		path: "admin-dashboard",
+		element: <DashboardLayout/>,
+		children: [
+			{
+				index: true,
+				element: < AdminDashBoard/>,
+			},
+        ]
+    }
+
         
 ])

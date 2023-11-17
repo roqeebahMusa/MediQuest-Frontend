@@ -2,7 +2,7 @@ import {Link } from "react-router-dom"
 
 const MiniLandingPage:React.FC = () => {
   return (
-    <div className='sm:pt-20 sm:custom-bg '>
+    <div className='sm:pt-20 sm:custom-bg text-black '>
         <div className='sm: my-12'>
             <h1 className='sm:text-center sm:text-[#177eb1] sm:font-extrabold  sm:text-[45px]'>MediQuest</h1>
         </div>
