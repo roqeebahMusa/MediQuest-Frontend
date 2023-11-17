@@ -12,6 +12,8 @@ import Header from "../component/blocks/Header"
 import MiniLandingPage from "../pages/MiniLandingPage"
 import LandingWebLayout from "../component/layout/LandingWebLayout"
 import MediQuestLandingPage from "../pages/landing/mediQuestLandingPage"
+import DashboardLayout from "../component/layout/DashboardLayout"
+import AdminDashBoard from "../pages/AdminDashBoard"
 
 
 
@@ -66,6 +68,19 @@ export const Index = createBrowserRouter([
                 
             }
         ]
+    },
+
+    {
+		path: "admin-dashboard",
+		element: <DashboardLayout/>,
+		children: [
+			{
+				index: true,
+				element: < AdminDashBoard/>,
+			},
+        ]
     }
+
+
         
 ])
