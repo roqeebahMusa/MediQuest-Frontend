@@ -9,18 +9,12 @@ const MediQuestLandingPage:React.FC = () => {
   const handleSignup = () =>{
     Navigate("/register")
   }
+
   return (
     <div className='text-black '>
       <section className="">
-        <div
-         className="">
-        <div   style={{
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          opacity: "80%",
-          width: "100%",
-}}
-        className="px-[90px] h-[90vh] flex flex-col justify-center bg-cover bg-center w-96">
+        <div className="">
+        <div className="px-[90px] h-[90vh] flex flex-col justify-center bg-cover bg-center w-96">
           <h1 className='font-bold text-[56px] mb-4 w-[600px] line67'>Find the Perfect Lab for Your Needs</h1>
           <p className="mb-5">Book your laboratory tests online and get fast, accurate results</p>
         <div className="">
