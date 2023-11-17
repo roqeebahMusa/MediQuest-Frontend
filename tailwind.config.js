@@ -6,7 +6,15 @@ export default {
     "./src/index.css",
   ],
   theme: {
-    extend: {},
+    extend: {
+      // backgroundImage: {
+      //   'hero-image': "url('../../assets/HeroSection.png')",
+      // }
+
+      backgroundImage: {
+        'hero-pattern': "url('../../assets/HeroSection.png')",
+      }
+    },
     screens: {
       sm: { min: "300px", max: "767px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }

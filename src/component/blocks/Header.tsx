@@ -1,6 +1,7 @@
 import React from 'react'
 import {TfiAngleDown} from "react-icons/tfi"
 import { useNavigate } from 'react-router-dom'
+// import red from "../../assets/HeroSection.png"
 
 const Header:React.FC = () => {
   const Navigate = useNavigate()

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import {Link, useNavigate} from "react-router-dom"
 import { LoginMediUser } from '../utils/ApiCalls'
 import ShowToast from '../component/common/ShowToast'
-import pix from "../assets/Group-47545.png"
+// import pix from "../assets/Group-47545.png"
 
 const Login:React.FC = () => {
   const Navigate = useNavigate()
@@ -33,12 +33,12 @@ const Login:React.FC = () => {
     }
   }
   return (
-    <div className='bg-slate-300 h-[100vh] w-screen flex justify-center items-center sm:bg-white md:bg-white' >
+    <div className='bg-slate-300 h-[100vh] w-[100%] flex justify-center items-center sm:bg-white md:bg-white' >
        <div className="bg-slate-50 flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
-       <div className='bg-[#0D3859] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'>
+       <div className='bg-[#0D3859] h-[600px] w-[450px] m-auto rounded-[10px] sm:hidden md:hidden'>
        </div>
         <div className='flex flex-col gap-4 mx-10 mt-10 sm:mt-0 md:mt-0 sm:w-screen sm:mx-0 md:w-screen md:mx-0'>
-        <img src={pix} alt="" />
+        {/* <img src={pix} alt="" /> */}
        </div>
         <div className='flex flex-col gap-4 mx-10 mt-10 sm:mt-0 md:mt-0 sm:w-screen sm:mx-4 md:w-screen md:mx-6'>
             <h1 className='text-[#177eb1] text-center text-[50px] font-extrabold  sm:text-[45px]  '>MediQuest</h1>

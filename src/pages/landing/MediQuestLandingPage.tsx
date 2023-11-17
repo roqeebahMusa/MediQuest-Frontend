@@ -1,6 +1,8 @@
 import React from 'react'
 import { RiBox2Line } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
+// import Hero from "../../assets/HeroTwo.jpeg"
+import Book from "../../assets/About.jpeg"
 
 const MediQuestLandingPage:React.FC = () => {
   const Navigate = useNavigate()
@@ -10,8 +12,15 @@ const MediQuestLandingPage:React.FC = () => {
   return (
     <div className='text-black '>
       <section className="">
-        <div className="">
-        <div className="px-[90px] h-[90vh] flex flex-col justify-center">
+        <div
+         className="">
+        <div   style={{
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          opacity: "80%",
+          width: "100%",
+}}
+        className="px-[90px] h-[90vh] flex flex-col justify-center bg-cover bg-center w-96">
           <h1 className='font-bold text-[56px] mb-4 w-[600px] line67'>Find the Perfect Lab for Your Needs</h1>
           <p className="mb-5">Book your laboratory tests online and get fast, accurate results</p>
           <div className="">
@@ -43,15 +52,30 @@ const MediQuestLandingPage:React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="w-[500px] h-[600px] bg-red-600">
+          <div style={{
+            backgroundImage: `url(${Book})`,
+            objectFit: "contain",
+            backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
+            borderRadius: "7px",
+          }} className="w-[500px] h-[600px] bg-red-600">
             
-            <img src="" alt="" />
+            <img src='' alt="" />
+
           </div>
         </div>
       </section>
       <section className="">
         <div className="bg-slate-500 flex gap-[100px] justify-between items-center py-[70px] px-[90px]">
-        <div className="w-[500px] h-[600px] bg-red-600">
+        <div
+            style={{
+              backgroundImage: `url(${Book})`,
+              objectFit: "contain",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              borderRadius: "7px",
+            }}
+         className="w-[500px] h-[600px] bg-red-600">
             <img src="" alt="" />
           </div>
           <div className="w-[50%] ml-[60px]">
@@ -73,6 +97,7 @@ const MediQuestLandingPage:React.FC = () => {
           
         </div>
       </section>
+
       
       <section className="">
         <div className="bg-slate-400 py-[60px] px-[90px] text-center">

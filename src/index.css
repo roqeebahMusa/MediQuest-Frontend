@@ -12,6 +12,7 @@ h2{
 
 .custom-bg{
   background-image: url(./assets/react.svg);
+  background-image: url(../src/assets/HeroSection.png);
   background-size: cover;
   background-position: center;
 }
