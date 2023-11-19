@@ -14,16 +14,16 @@ const VerifyPassword:React.FC = () => {
           <form action="">
           <div className="mx-6 flex text-center ">
             <input type="text" 
-            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[400px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full" 
+            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[40px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full" 
             placeholder='' required maxLength={1} min={0} max={9} pattern='[0-9]{1}' size={1}/>
-            <input type="text" 
-            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[400px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full"
+            <input type="number" 
+            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[40px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full"
             placeholder='' required maxLength={1} min={0} max={9} pattern='[0-9]{1}' size={1}/>
-            <input type="text" 
-            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[400px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full" 
+            <input type="number" 
+            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[40px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full" 
             placeholder='' required maxLength={1} min={0} max={9} pattern='[0-9]{1}' size={1}/>
-            <input type="text" 
-            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[400px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full" 
+            <input type="number" 
+            className="bg-white text-black placeholder:text-slate-400 outline-0 p-4 h-[55px] w-[40px] border-slate-300 border-[1px] rounded-[30px] sm:h-[50px] sm:w-full md:h-[50px] md:w-full" 
             placeholder='' required maxLength={1} min={0} max={9} pattern='[0-9]{1}' size={1}/>
             </div>
             <div className="mx-6 mt-6 text-white">

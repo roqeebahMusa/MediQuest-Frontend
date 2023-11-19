@@ -1,16 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
 import {TfiAngleDown} from "react-icons/tfi"
 import { useNavigate } from 'react-router-dom'
-import { GrMenu } from "react-icons/gr";
+import {AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
+import MenuDrop from './MenuDrop';
 
 
 const Header:React.FC = () => {
   const Navigate = useNavigate()
+  const [showmenu, setShowmenu] =useState<boolean>(false)
   const handleSignup = () =>{
     Navigate("/register")
   }
   const handleLogin = () =>{
     Navigate("/login")
+  }
+  const changeMenuShow = ()=>{
+    setShowmenu(!showmenu)
   }
   return (
     <div className='bg-slate-200 px-[90px] sm:px-[16px] md:px-[30px] lg:px-[60px]'>
@@ -36,8 +41,16 @@ const Header:React.FC = () => {
           >Log in</button>
         </div>
         <div className="text-black text-[30px] hidden sm:block md:block lg:hidden">
-            {/* <FiMenu/> */}
-            <GrMenu/>
+          <div className=""
+          onClick={changeMenuShow}
+          >
+            {showmenu?<AiOutlineClose/>: <AiOutlineMenu/>}
+            {showmenu && (
+              <div className="">
+                <MenuDrop/>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>

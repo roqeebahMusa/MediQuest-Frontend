@@ -4,9 +4,12 @@ import { useNavigate } from 'react-router-dom';
 
 const MediQuestLandingPage:React.FC = () => {
   const Navigate = useNavigate()
+  
+
   const handleSignup = () =>{
     Navigate("/register")
   }
+
   return (
     <div className='text-black '>
       <section className="">

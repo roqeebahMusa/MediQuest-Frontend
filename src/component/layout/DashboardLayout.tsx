@@ -5,11 +5,11 @@ import { Outlet } from 'react-router-dom'
 
 const DashboardLayout:React.FC = () => {
   return (
-    <div className='  '>
+    <div className='bg-red-600  '>
         <SideBar/>
-        <div className='bg-slate-300 ml-[230px]'>
+        <div className=''>
             <NavBar/>
-                <div className=' bg-black h-[100vh] mt-[70px]'>
+                <div className='  h-[100vh] pt-[90px] ml-[250px] pr-5 '>
                     <Outlet/>
                 </div>
         </div>
