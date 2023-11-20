@@ -17,43 +17,6 @@ import AdminDashBoard from "../pages/AdminDashBoard"
 
 export const Index = createBrowserRouter([
 
-    // {
-    //     children: [
-    //         {
-    //             index: true,
-    //             element: <MiniLandingPage />
-    //         },
-    //         {
-    //             path: "/login",
-    //             element: <Login />
-    //         },
-    //         {
-    //             path: "/register",
-    //             element: <Register />
-    //         },
-    //         {
-    //             path: "/registerconfirm",
-    //             element: <RegisterConfirm/>
-    //         },
-    //         {
-    //             path: "/forgotpassword",
-    //             element: <ForgotPassword />
-    //         },
-    //         {
-    //             path: "/verifypassword",
-    //             element: <VerifyPassword />
-    //         },
-    //         {
-    //             path: "/createpassword",
-    //             element: <CreateNewPassword />
-    //         },
-    //         {
-    //             path: "/home",
-    //             element: <Header/>
-    //         }
-    //     ]
-    // },
-
     
     {
         path: "/",

@@ -1,9 +1,19 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {TfiAngleDown} from "react-icons/tfi"
 import { useNavigate } from 'react-router-dom';
-import { GrMenu } from "react-icons/gr";
+// import { GrMenu } from "react-icons/gr";
+// import { FaTimes } from "react-icons/fa"
+// import Dropdown from './Dropdown';
 
 const Header:React.FC = () => {
+
+  // const [toggle, setToggle] = useState(false);
+
+  // const handlechange = () => { 
+  //   setToggle(!toggle) 
+  // }
+
+
   const Navigate = useNavigate()
   const handleSignup = () =>{
     Navigate("/register")
@@ -12,8 +22,8 @@ const Header:React.FC = () => {
     Navigate("/login")
   }
   return (
-    <div className='bg-slate-200 px-[90px] sm:px-[16px] md:px-[30px] lg:px-[60px]'>
-      <div className='flex items-center justify-between bg-slate-200 h-[70px]'>
+    <div className='bg-[white] px-[90px] sm:px-[16px] md:px-[30px] lg:px-[60px]'>
+      <div className='flex items-center justify-between h-[70px]'>
         <div className="flex items-center justify-between ">
           <div className='mr-28 sm:mr-0 lg:mr-10'>
             <h1 className='text-[#0D3859] font-bold text-[30px]'>MediQuest</h1>
@@ -27,15 +37,23 @@ const Header:React.FC = () => {
           </div>
         </div>
         <div className="sm:hidden md:hidden">
-          <button className='bg-transparent text-black border border-[black] mr-2 py-2 px-5 rounded-[10px] lg:text-[14px]'
+          <button className='bg-transparent text-[#161C4B] font-medium border border-[#4EB2E4] mr-2 py-2 px-5 rounded-[10px] lg:text-[14px]'
           onClick={handleSignup}
           >Sign Up</button>
-          <button className='bg-black text-white py-2 px-6 rounded-[10px] lg:text-[14px]'
+          <button className='bg-[#4EB2E4] text-white py-2 px-6 rounded-[10px] lg:text-[14px]'
           onClick={handleLogin}
           >Log in</button>
         </div>
       <div className="text-black text-[30px] hidden sm:block md:block lg:hidden">
-            <GrMenu/>
+
+        {/* {           
+          toggle ? <FaTimes fontSize={"30px"} onClick={handlechange} /> : <GrMenu fontSize={"30px"} onClick={handlechange}/>
+        }
+
+        {
+          toggle ? <Dropdown props={handlechange} /> : null
+        } */}
+
         </div>
       </div>
     </div>

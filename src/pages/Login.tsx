@@ -40,11 +40,9 @@ const Login:React.FC = () => {
    
 
   return (
-    <div className='bg-slate-300 h-[100vh] w-[100%] flex justify-center items-center sm:bg-white md:bg-white' >
+    <div className='bg-slate-300 h-[100vh] w-screen flex justify-center items-center sm:bg-white md:bg-white' >
        <div className="bg-slate-50 flex rounded-[10px] sm:bg-transparent sm:w-screen md:bg-transparent md:w-screen">
-      <div className='bg-[#0D3859] h-[600px] w-[450px] m-auto rounded-[10px] sm:hidden md:hidden'>
-       </div>
-        <div className='flex flex-col gap-4 mx-10 mt-10 sm:mt-0 md:mt-0 sm:w-screen sm:mx-0 md:w-screen md:mx-0'>
+       <div className='bg-[#0D3859] h-[650px] w-[500px] m-auto rounded-[10px] sm:hidden md:hidden'>
         <img src={pix} alt="" />
        </div>
         <div className='flex flex-col gap-4 mx-10 justify-center sm:mt-0 md:mt-0 sm:w-screen sm:mx-4 md:w-screen md:mx-6'>
