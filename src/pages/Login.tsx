@@ -1,12 +1,14 @@
 import React, {useState} from 'react'
 import {Link, useNavigate} from "react-router-dom"
 import { LoginMediUser } from '../utils/ApiCalls'
-import ShowToast from '../component/common/ShowToast'
+// import ShowToast from '../component/common/ShowToast'
 import pix from "../assets/Group-47545.png"
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md'
+import HashLoader from 'react-spinners/HashLoader'
 
 const Login:React.FC = () => {
   const Navigate = useNavigate()
+  const [spin, setSpin] = useState(false)
   const [passwordVisible, setPasswordVisible] = useState(false)
   const [formData, setFormData] = useState({
     email: "",
@@ -25,12 +27,15 @@ const Login:React.FC = () => {
 
   const LoginUserSubmit = async ()=>{
     try{
+      setSpin(true)
       console.log("Before API call");
       const res = await LoginMediUser(formData)
       console.log("after API call");
-      ShowToast(true, "Login Successfull");
-      Navigate("/home")
+      // ShowToast(true, "Login Successfull");
+      Navigate("/")
       console.log("response", res)
+
+      console.log("this is for form", res)
     }catch(error:any)
     {
       return error
@@ -95,7 +100,21 @@ const Login:React.FC = () => {
             </div>
             </div>
             <div className="mx-4 mt-8  ">
-                <button className='bg-[#0D3859] text-white rounded-[30px] h-[60px] w-[400px]   sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Login</button>
+                <button className='bg-[#0D3859] text-[white] rounded-[30px] h-[60px] w-[400px]   sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>
+
+                      
+                {spin ? (
+      <HashLoader
+     color='white'
+   loading={spin}
+  size={40}
+  aria-label="Loading Spinner"
+  data-testid="loader"
+/>
+              ) : 'Login'}
+
+
+                </button>
             </div>
             </form> 
             <div className="">

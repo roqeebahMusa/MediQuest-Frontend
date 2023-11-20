@@ -15,7 +15,8 @@ const MenuDrop:React.FC = () => {
   return (
     
     <div>
-        <div className='bg-slate-300 w-[100%] h-[100%] absolute top-[70px] right-0 text-black text-[18px] space-y-5 ' onClick={preventPropagation}>
+          
+        <div className='bg-[#4EB2E4] w-[100%] h-[100%] absolute top-[70px] right-0 text-black text-[18px] space-y-5 ' onClick={preventPropagation}>
             <nav className='hover hover:bg-[#0D3859] hover:text-white p-5 cursor-pointer'>Book Now</nav>
             <nav className='hover hover:bg-[#0D3859] hover:text-white p-5 cursor-pointer'>Services</nav>
             <nav className='hover hover:bg-[#0D3859] hover:text-white p-5 cursor-pointer'>About Us</nav>

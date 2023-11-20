@@ -13,7 +13,7 @@ export default {
           black: "black",
           deepBlue: "#0D3859",
           navyBlue: "#161C4B",
-          slate: "slate"
+          slate: "#C0C2C9"
       },
 
     extend: {
