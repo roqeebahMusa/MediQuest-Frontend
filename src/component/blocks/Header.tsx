@@ -40,10 +40,10 @@ const Header:React.FC = () => {
           </div>
         </div>
         <div className="sm:hidden md:hidden">
-          <button className='bg-transparent text-[#161C4B] font-medium border border-[#4EB2E4] mr-2 py-2 px-5 rounded-[10px] lg:text-[14px]'
+          <button className='bg-transparent text-[#161C4B] font-medium border border-deepBlue mr-2 py-2 px-5 rounded-[10px] lg:text-[14px]'
           onClick={handleSignup}
           >Sign Up</button>
-          <button className='bg-[#4EB2E4] text-white py-2 px-6 rounded-[10px] lg:text-[14px]'
+          <button className='bg-deepBlue text-white py-2 px-6 rounded-[10px] lg:text-[14px]'
           onClick={handleLogin}
           >Log in</button>
         </div>

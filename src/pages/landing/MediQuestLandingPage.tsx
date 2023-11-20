@@ -2,38 +2,35 @@ import React from 'react'
 import { RiBox2Line } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
 import About from "../../assets/About.jpeg"
-import Hero from "../../assets/HeroTwo.jpeg"
+// import Hero from "../../assets/HeroTwo.jpeg"
 
 const MediQuestLandingPage:React.FC = () => {
   const Navigate = useNavigate()
   
 
   const handleSignup = () =>{
-    Navigate("/register")
+    Navigate("/register");
   }
 
   return (
     <div className=''>
       <section className="">
-        <div className="">
-        <div  style={{
-            backgroundImage: `url(${Hero})`,
-            filter: `opacity(${"90%"})`
-          }}
+        
+        <div
          className="px-[90px] bg-cover bg-center h-[90vh] flex flex-col justify-center sm:px-[16px] md:px-[30px] lg:px-[60px]">
-          <h1 className='font-bold text-7xl text-white mb-6 w-[800px] sm:w-[100%] sm:text-5xl md:w-[80%] md:text-6xl lg:w-[550px] lg:text-6xl text-[white] '>Find the Perfect Lab for Your Need</h1>
-          <p className="mb-6 text-2xl sm:text-[17px] md:w-[70%] md:text-[20px] lg:text-[17px]">Book your laboratory tests online and get fast, accurate results.</p>
+          <h1 className='font-bold text-7xl  text-deepBlue mb-6 w-[800px] sm:w-[100%] sm:text-5xl md:w-[80%] md:text-6xl lg:w-[550px] lg:text-6xl z-10'>Find the Perfect Lab for Your Need</h1>
+          <p className="mb-6 text-deepBlue text-2xl sm:text-[17px] md:w-[70%] md:text-[20px] lg:text-[17px]">Book your laboratory tests online and get fast, accurate results.</p>
           <div className="">
-              <button className='bg-[#4EB2E4] text-white border-[white] py-3 px-7 mr-2 rounded-[7px] lg:px-5 lg:py-2'>Search</button>
-              <button className='bg-transparent text-black border border-[#4EB2E4] py-3 px-6 rounded-[7px] md:px-5 lg:px-5 lg:py-2'>Learn More</button>
+              <button className='bg-deepBlue text-white border-[white] py-3 px-7 mr-2 rounded-[7px] lg:px-5 lg:py-2'>Search</button>
+              <button className='bg-transparent text-black border border-deepBlue py-3 px-6 rounded-[7px] md:px-5 lg:px-5 lg:py-2'>Learn More</button>
           </div>
         </div>
-        </div>
+        
       </section>
       <section className="">
         <div className="bg-slate-300 flex gap-[100px] justify-between items-center py-[70px] px-[90px] sm:px-[16px] sm:flex-col sm:py-[40px] sm:gap-7 md:px-[30px] md:gap-0 md:py-[50px] lg:px-[60px] lg:py-[50px] lg:gap-[0]">
           <div className="w-[50%] mr-[60px] sm:w-[100%] sm:mr-0 md:w-[100%] md:mr-4 ">
-            <h1 className='font-bold text-[40px] mb-4 line48 sm:text-4xl md:text-4xl lg:text-4xl text-[#0D3859] '>Find and Book Laboratory Tests with Ease</h1>
+            <h1 className='font-bold text-[40px] mb-4 line48 sm:text-4xl md:text-4xl lg:text-4xl text-deepBlue '>Find and Book Laboratory Tests with Ease</h1>
             <p className=" text-[17px] md:text-[15px] lg:text-[15px] text-black">Discover a wide range of laboratory tests and conveniently book them online.</p>
             <div className="flex justify-between gap-4 mt-10 sm:flex-col sm:mt-8 md:mt-5 md:gap-3 ">
               <div className="">

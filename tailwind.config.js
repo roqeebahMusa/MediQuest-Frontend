@@ -8,12 +8,11 @@ export default {
   theme: {
 
       colors: {
-        // white: "white",
+        white: "white",
           blue: "#4EB2E4",
           black: "black",
           deepBlue: "#0D3859",
           navyBlue: "#161C4B",
-          slate: "#C0C2C9"
       },
 
     extend: {
