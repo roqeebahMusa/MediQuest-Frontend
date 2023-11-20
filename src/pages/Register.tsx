@@ -2,6 +2,7 @@ import React, {useState, } from 'react'
 import {Link, useNavigate} from "react-router-dom"
 import ShowToast from '../component/common/ShowToast';
 import { RegisterMediUser } from '../utils/ApiCalls';
+import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
 
 const Register:React.FC = () => {
   const Navigate = useNavigate();
@@ -55,15 +56,29 @@ const Register:React.FC = () => {
             className="bg-white text-black placeholder:text-slate-400 outline-[#4EB2E4] p-4 h-[55px] w-[400px] border-slate-400 border-[1px] rounded-[30px] sm:h-[45px] sm:w-full md:h-[45px] md:w-full" 
             placeholder='FullName'/>
             </div>
+            
             <div className="mx-6 mb-2">
             <input type="email"
             onChange={onChangeValue}
             required  
-            className="bg-white text-black placeholder:text-slate-400 outline-[#4EB2E4] p-4 h-[55px] w-[400px] border-slate-400 border-[1px] rounded-[30px] sm:h-[45px] sm:w-full md:h-[45px] md:w-full" 
+            className="bg-white text-black placeholder:text-slate-400 outline-[#4EB2E4] p-4 h-[55px] w-[400px] border-slate-400 border-[1px] rounded-[30px] sm:h-[45px] sm:w-[100%] md:h-[45px] md:w-full" 
             placeholder='Email'/>
             </div>
-            <div className="mx-4 mb-2 flex items-center justify-between border-slate-400 border-[1px] rounded-[30px] outline-[#4eb2e4]">
-              
+
+            <div className="mx-6 mb-2 flex items-center justify-between border-slate-400 border-[1px] w-[400px] rounded-[30px] outline-[#4eb2e4]  ">
+            <input type={passwordVisible? "text": "password"} 
+            required
+             onChange={onChangeValue}
+            className="bg-transparent text-black placeholder:text-slate-400  p-4 h-[55px] rounded-[30px]  outline-none sm:h-[45px] sm:w-full md:h-[45px] md:w-full " 
+            placeholder='Password' />
+              <div className="pr-4"onClick={togglePassword}>
+                {passwordVisible?<div className='text-black'>
+                  <MdVisibility/>
+                </div> :
+                <div className='text-black'>
+                  <MdVisibilityOff/>
+                </div>}
+              </div>
             </div>
             <div className="mx-6 mb-2">
             <input type="password"
@@ -74,7 +89,7 @@ const Register:React.FC = () => {
             placeholder='Confirm Password' />
             </div> 
             <div className="mx-6 mt-8">
-                <button className='bg-[#0D3859] rounded-[30px] h-[55px] w-[400px]  sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Register</button>
+                <button type='submit' className='bg-[#0D3859] text-white rounded-[30px] h-[55px] w-[400px]  sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Register</button>
             </div>
             <div className="">
              <p className=' text-black text-center'>Already have an account? 

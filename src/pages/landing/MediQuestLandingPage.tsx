@@ -6,9 +6,12 @@ import Hero from "../../assets/HeroTwo.jpeg"
 
 const MediQuestLandingPage:React.FC = () => {
   const Navigate = useNavigate()
+  
+
   const handleSignup = () =>{
     Navigate("/register")
   }
+
   return (
     <div className=''>
       <section className="">

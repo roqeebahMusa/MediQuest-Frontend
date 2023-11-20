@@ -2,7 +2,11 @@ import React from 'react'
 
 const AdminDashBoard:React.FC = () => {
   return (
-    <div>AdminDashBoard</div>
+    <div className='bg-slate-500'>
+        <div className=''>
+            classsss
+        </div>
+    </div>
   )
 }
 

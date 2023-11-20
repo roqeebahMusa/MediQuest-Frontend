@@ -29,7 +29,7 @@ const Login:React.FC = () => {
       const res = await LoginMediUser(formData)
       console.log("after API call");
       ShowToast(true, "Login Successfull");
-      Navigate("/")
+      Navigate("/home")
       console.log("response", res)
     }catch(error:any)
     {
@@ -95,7 +95,7 @@ const Login:React.FC = () => {
             </div>
             </div>
             <div className="mx-4 mt-8  ">
-                <button className='bg-[#0D3859] rounded-[30px] h-[60px] w-[400px]   sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Login</button>
+                <button className='bg-[#0D3859] text-white rounded-[30px] h-[60px] w-[400px]   sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Login</button>
             </div>
             </form> 
             <div className="">
