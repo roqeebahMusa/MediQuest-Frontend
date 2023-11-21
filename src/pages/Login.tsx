@@ -52,7 +52,7 @@ const Login:React.FC = () => {
        </div>
         <div className='flex flex-col gap-4 mx-10 justify-center sm:mt-0 md:mt-0 sm:w-screen sm:mx-4 md:w-screen md:mx-6'>
             <h1 className='text-[#177eb1] text-center text-[50px] font-extrabold  sm:text-[45px]  '>MediQuest</h1>
-            <h2 className='text-black text-center text-[35px] sm:text-[20px] md:text-[20px] '>Login to your account </h2>
+            <h2 className='text-black text-center text-[35px] sm:text-[20px] md:text-[20px]'>Login to your account </h2>
             <form 
             onSubmit={(e)=>{
               e.preventDefault()
