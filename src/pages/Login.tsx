@@ -29,13 +29,13 @@ const Login:React.FC = () => {
     try{
       setSpin(true)
       console.log("Before API call");
-      const res = await LoginMediUser(formData)
+      const res = await LoginMediUser(formData);
       console.log("after API call");
       // ShowToast(true, "Login Successfull");
       Navigate("/")
       console.log("response", res)
 
-      console.log("this is for form", res)
+      console.log("this is for form", res);
     }catch(error:any)
     {
       return error
