@@ -1,4 +1,3 @@
-import React from 'react'
 import {Link } from "react-router-dom"
 
 const MiniLandingPage:React.FC = () => {
@@ -14,11 +13,11 @@ const MiniLandingPage:React.FC = () => {
         </div>
         <div>
        <div className=" sm:text-center sm: mt-12 ">
-                <Link to={`/login`}>
+                <Link to={'/login'}>
                 <button className='bg-white text-[#0D3859] rounded-[30px] sm:h-[40px] sm:w-6/12 '>Login</button></Link>
         </div>
         <div className="mt-3 sm:text-center ">
-                <Link to={`/register`}>
+                <Link to={'/register'}>
                 <button className='bg-[#0D3859] rounded-[30px] sm:h-[40px] sm:w-6/12 '>Register</button>
                 </Link>
         </div>

@@ -3,12 +3,12 @@ import pix from "../assets/react.svg"
 
 const ForgotPassword:React.FC = () => {
   return (
-    <div className='bg-slate-300 h-screen w-screen pt-8'> 
+    <div className='bg-slate-300 h-[100vh] w-screen pt-8 sm:pt-0'> 
       <div className="">
         <div className=" text-black text-center mx-10">
           <p className='mb-20 text-[18px] font-medium'>Forgot Password</p>
           <div className="flex justify-center h-[200px] mb-20 ">
-          <img src={pix} className='h-[100%] w-[100%] ' />
+          <img src={pix} className='h-[100%] w-[100%] sm:w-[60%] sm:h-[60%]'/>
           </div>
           <p className='mb-10 text-[18px] font-medium'>Please enter your registered email address to receive a verification code</p>
           <form action="">

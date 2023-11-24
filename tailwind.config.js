@@ -6,7 +6,21 @@ export default {
     "./src/index.css",
   ],
   theme: {
-    extend: {},
+
+      colors: {
+        white: "white",
+          blue: "#4EB2E4",
+          black: "black",
+          deepBlue: "#0D3859",
+          navyBlue: "#161C4B",
+      },
+
+    extend: {
+      // backgroundImage: {
+      //   'hero-image': "url('../../assets/HeroSection.png')",
+      // }
+
+    },
     screens: {
       sm: { min: "300px", max: "767px" },
       // => @media (min-width: 640px and max-width: 767px) { ... }

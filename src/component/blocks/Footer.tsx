@@ -4,7 +4,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 const Footer:React.FC = () => {
   return (
-    <div className='text-black px-[90px] py-[40px] sm:px-[16px] md:px-[30px] lg:px-[60px] '>
+    <div className='text-deepBlue px-[90px] py-[40px] sm:px-[16px] md:px-[30px] lg:px-[60px] '>
       <div className="flex justify-between items-center border-b-2 pb-5 sm:flex-col sm:items-start md:flex-col md:items-start ">
         <div className=''>
           <h1 className=' w-[50%] text-[70px] text-[#0D3859] font-extrabold sm:text-[55px] md:mb-1'>MediQuest</h1>

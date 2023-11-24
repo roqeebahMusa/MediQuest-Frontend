@@ -3,10 +3,12 @@ import {Link, useNavigate} from "react-router-dom"
 import ShowToast from '../component/common/ShowToast';
 import { RegisterMediUser } from '../utils/ApiCalls';
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md';
+import HashLoader  from 'react-spinners/HashLoader';
 
 const Register:React.FC = () => {
   const Navigate = useNavigate();
   const [passwordVisible, setPasswordVisible] = useState(false)
+  const [spin, setSpin] = useState(false)
 	const [formData, setFormData] = useState({
 		fullName: "",
 		email: "",
@@ -25,11 +27,12 @@ const Register:React.FC = () => {
  
   const RegisterUserSubmit = async () => {
 		try {
+      setSpin(true)
       console.log("before api call");
 			const res = await RegisterMediUser(formData);
       console.log("after api call");
 			ShowToast(true, "Registration Successfull");
-			Navigate("/home");
+			Navigate("/login");
       console.log("response", res)
 		} catch (error:any) {
 			return error;
@@ -87,7 +90,20 @@ const Register:React.FC = () => {
             placeholder='Confirm Password' />
             </div> 
             <div className="mx-6 mt-8">
-                <button type='submit' className='bg-[#0D3859] text-white rounded-[30px] h-[55px] w-[400px]  sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>Register</button>
+                <button type='submit' className='bg-[#0D3859] text-white rounded-[30px] h-[55px] text-[white] w-[400px]  sm:h-[45px] sm:w-full md:h-[45px] md:w-full'>
+
+                {spin ? (
+      <HashLoader
+     color='white'
+   loading={spin}
+  size={40}
+  aria-label="Loading Spinner"
+  data-testid="loader"
+/>
+              ) : 'Register'}
+
+
+                </button>
             </div>
             <div className="">
              <p className=' text-black text-center'>Already have an account? 
