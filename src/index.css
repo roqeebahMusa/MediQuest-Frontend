@@ -45,6 +45,7 @@ body {
   box-sizing: border-box;
 color: white;
 color: black;
+padding: 0;
 }
 /* button {
   border-radius: 8px;

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import {Link, useNavigate} from "react-router-dom"
 import { LoginMediUser } from '../utils/ApiCalls'
-// import ShowToast from '../component/common/ShowToast'
+import ShowToast from '../component/common/ShowToast'
 import pix from "../assets/Group-47545.png"
 import { MdVisibility, MdVisibilityOff } from 'react-icons/md'
 import HashLoader from 'react-spinners/HashLoader'
@@ -14,7 +14,7 @@ const Login:React.FC = () => {
     email: "",
     password: ""
   })
-  const togglePassword = ()=>{
+  const togglePassword = ()=> {
     setPasswordVisible(!passwordVisible)
   }
   const onChangeForm = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -31,7 +31,7 @@ const Login:React.FC = () => {
       console.log("Before API call");
       const res = await LoginMediUser(formData);
       console.log("after API call");
-      // ShowToast(true, "Login Successfull");
+      ShowToast(true, "Login Successful");
       Navigate("/")
       console.log("response", res)
 

@@ -29,13 +29,13 @@ export const LoginMediUser = async(data: ILoginUser)=>{
         }
     }catch(error:any)
     {
-        ShowToast(false, `${error.response.data.message}`);
+        return error
     }
 }
 
 export const SingleMediUser = async(Id: string)=>{
     try{
-        const response = await Instance.post(`/SingleMedi-user/${Id}`)
+        const response = await Instance.get(`/SingleMedi-user/${Id}`)
         return response
     }catch(error:any)
     {

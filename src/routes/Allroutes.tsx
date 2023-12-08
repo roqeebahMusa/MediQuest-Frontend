@@ -1,18 +1,17 @@
 import { createBrowserRouter } from "react-router-dom"
-// import WebLayout from "../component/layout/WebLayout"
 import Login from "../pages/Login"
 import ForgotPassword from "../pages/ForgotPassword"
 import Register from "../pages/Register"
 import VerifyPassword from "../pages/VerifyPassword"
 import CreateNewPassword from "../pages/CreateNewPassword"
 import RegisterConfirm from "../pages/RegisterConfirm"
-// import Header from "../component/blocks/Header"
-// import MiniLandingPage from "../pages/MiniLandingPage"
 import LandingWebLayout from "../component/layout/LandingWebLayout"
 import MediQuestLandingPage from "../pages/landing/MediQuestLandingPage"
-// import DashBoard from "../component/DashBoard/HomeDashBoard"
 import DashboardLayout from "../component/layout/DashboardLayout"
 import AdminDashBoard from "../pages/AdminDashBoard"
+import About from "../pages/About"
+import Services from "../pages/Services"
+import Header from "../component/blocks/Header"
 
 
 export const Index = createBrowserRouter([
@@ -29,11 +28,24 @@ export const Index = createBrowserRouter([
             },
 
           
-            // {
-            //     path: "/",
-            //     element: <Header/>
-            // }
+            {
+                path: "/",
+                element: <Header/>
+            },
+
+            {
+                 path: "/about",
+                 element: <About />
+            },
+
+            {
+               path: "/services",
+               element: <Services />
+            },
+
         ]
+        
+        
     },
 
     {
@@ -60,6 +72,7 @@ export const Index = createBrowserRouter([
         path: "/createpassword",
         element: <CreateNewPassword />
     },
+   
      {
 		path: "admin-dashboard",
 		element: <DashboardLayout/>,

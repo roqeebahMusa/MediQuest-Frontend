@@ -31,7 +31,7 @@ const Register:React.FC = () => {
       console.log("before api call");
 			const res = await RegisterMediUser(formData);
       console.log("after api call");
-			ShowToast(true, "Registration Successfull");
+			ShowToast(true, "Registration Successful");
 			Navigate("/login");
       console.log("response", res)
 		} catch (error:any) {

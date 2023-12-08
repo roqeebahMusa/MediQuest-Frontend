@@ -3,22 +3,13 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
-    "./src/index.css",
   ],
   theme: {
 
-      colors: {
-        white: "white",
-          blue: "#4EB2E4",
-          black: "black",
-          deepBlue: "#0D3859",
-          navyBlue: "#161C4B",
-      },
-
     extend: {
-      // backgroundImage: {
-      //   'hero-image': "url('../../assets/HeroSection.png')",
-      // }
+      // animation: {
+      //   fade: 'fadeInRight 1.5s',
+      // },
 
     },
     screens: {
