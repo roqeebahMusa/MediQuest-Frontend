@@ -2,6 +2,8 @@ import React from 'react'
 import { RiBox2Line } from "react-icons/ri";
 import { useNavigate } from 'react-router-dom';
 import pix1 from "../../assets/ab.jpg"
+import pix2 from "../../assets/Health.jpg"
+import pix3 from "../../assets/About.jpg"
 import Footer from '../../component/blocks/Footer';
 
 const MediQuestLandingPage:React.FC = () => {
@@ -55,14 +57,14 @@ const MediQuestLandingPage:React.FC = () => {
           </div>
           <div className="w-[500px] h-[580px] bg-red-600 sm:w-[100%] sm:bg-yellow-500 sm:h-[450px] md:w-[100%] md:h-[500px] lg:h-[500px] rounded-md overflow-hidden">
             
-            <img className='w-[100%] h-[100%] object-cover' src={pix1} alt="" />
+            <img className='w-[100%] h-[100%] object-cover' src={pix2} alt="" />
           </div>
         </div>
       </section>
       <section className="text-white">
         <div className="bg-[#0D3859] flex gap-[100px] justify-between items-center py-[70px] px-[90px] sm:px-[16px] sm:flex-col-reverse sm:py-[45px] sm:gap-7 md:px-[30px] md:gap-0 md:py-[50px] lg:px-[60px] lg:py-[50px] lg:gap-0">
         <div className="w-[500px] h-[580px] bg-red-600 sm:w-[100%] sm:bg-green-500 sm:h-[450px] md:w-[100%] md:h-[500px] lg:h-[500px] rounded-md overflow-hidden">
-            <img className='w-[100%] h-[100%] object-cover' src={pix1}  alt="" />
+            <img className='w-[100%] h-[100%] object-cover' src={pix3}  alt="" />
           </div>
           <div className="w-[50%] ml-[60px] sm:w-[100%] sm:ml-0 md:w-[100%] md:ml-4">
             <h1 className='font-bold text-[40px] mb-4 line48 sm:text-4xl md:text-4xl lg:text-4xl '>Save Time and Access Test Results Online with Our Laboratory Booking Webapp.</h1>
