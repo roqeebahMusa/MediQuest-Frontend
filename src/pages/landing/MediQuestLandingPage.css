@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+.showButton {
+    position: fixed;
+    background-color: #E2E8F0;
+    right: -100px;
+    bottom: 50px;
+    border-radius: 50%;
+    padding: 0.25rem;
+    font-size: 35px;
+    color: #0D3859;
+    cursor: pointer;
+    transform: translateX(-150px);
+    animation: sideLeft 1s;
+}
+
+@keyframes sideLeft {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(-150px);
+    }
+}

@@ -3,15 +3,9 @@ import {TfiAngleDown} from "react-icons/tfi"
 import { Link, useNavigate } from 'react-router-dom';
 import {AiOutlineClose, AiOutlineMenu } from "react-icons/ai"
 import MenuDrop from './MenuDrop';
+// import "../../pages/landing/MediQuestLandingPage.css"
 
 const Header:React.FC = () => {
-
-  // const [toggle, setToggle] = useState(false);
-
-  // const handlechange = () => { 
-  //   setToggle(!toggle) 
-  // }
-
 
   const Navigate = useNavigate()
   const [showmenu, setShowmenu] =useState<boolean>(false)
@@ -24,6 +18,21 @@ const Header:React.FC = () => {
   const changeMenuShow = ()=>{
     setShowmenu(!showmenu)
   }
+
+
+  // const onScroll = () => {
+  //   let pixelsFromTop = window.scrollY;
+  //   let documentHeight = document.body.clientHeight;
+  //   let windowHeight = window.innerHeight;
+  //   let difference = documentHeight - windowHeight;
+  //   let percentage = (100 * pixelsFromTop) / difference;
+  //   document.getElementById('').style.width = `${percentage} + %`;
+  // }
+
+
+
+
+
   return (
     <div className='bg-slate-200 px-[90px] w-[100%] sm:px-[16px] md:px-[30px] lg:px-[60px]'>
       <div className='flex items-center justify-between h-[70px]'>
@@ -68,6 +77,9 @@ const Header:React.FC = () => {
         </div>
       </div>
     </div>
+    {/* <div className='progress_wrapper'>
+      <div className='progress_bar' id='bar'></div>
+    </div> */}
     </div>
   )
 }

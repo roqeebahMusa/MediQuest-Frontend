@@ -5,14 +5,37 @@ import pix1 from "../../assets/ab.jpg"
 import pix2 from "../../assets/Health.jpg"
 import pix3 from "../../assets/About.jpg"
 import Footer from '../../component/blocks/Footer';
+import "./MediQuestLandingPage.css"
+import { FaArrowUp } from 'react-icons/fa';
+import { useState, useEffect } from 'react';
 
 const MediQuestLandingPage:React.FC = () => {
+
+  const [showButton, setShowButton] = useState(true);
   const Navigate = useNavigate()
   
 
   const handleSignup = () =>{
     Navigate("/register")
   }
+
+
+
+const onScroll = () => {
+  window.scrollY > 500 ? setShowButton(true) : setShowButton(false);
+}
+
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+
+  });
+
+  const scrollToTop = () => {
+    window.scrollTo(0,0)
+  }
+
 
   return (
     <div className='text-black '>
@@ -149,6 +172,7 @@ const MediQuestLandingPage:React.FC = () => {
           </div>
         </div>
         </section>
+        <FaArrowUp className={showButton ? "showButton" : "hidden"} onClick={scrollToTop} />
         <Footer />
     </div>
   )
